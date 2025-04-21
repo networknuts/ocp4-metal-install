@@ -227,6 +227,8 @@
    firewall-cmd --add-port=53/udp --zone=internal --permanent
    # for OCP 4.9 and later 53/tcp is required
    firewall-cmd --add-port=53/tcp --zone=internal --permanent
+   firewall-cmd --add-port=53/tcp --zone=external --permanent
+   firewall-cmd --add-port=53/udp --zone=external --permanent
    firewall-cmd --reload
    ```
 
